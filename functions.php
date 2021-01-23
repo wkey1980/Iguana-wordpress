@@ -36,5 +36,5 @@ require $theme_dir . '/inc/enqueue-scripts.php';
 // require $theme_dir . '/inc/menus.php';
 
 // Register Widgets areas
-// require $theme_dir . '/inc/widgets.php';
+require $theme_dir . '/inc/widgets.php';
 
