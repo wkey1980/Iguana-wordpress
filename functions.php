@@ -92,7 +92,7 @@ add_action( 'after_setup_theme', 'iguana_setup' );
 $theme_dir = get_template_directory();
 
 // Register Google Fonts
-// require $theme_dir . '/inc/google-fonts.php';
+require $theme_dir . '/inc/google-fonts.php';
 
 // Enqueue Styles
 require $theme_dir . '/inc/enqueue-styles.php';
