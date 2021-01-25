@@ -14,6 +14,8 @@ if ( ! function_exists( 'iguana_setup' ) ) :
         add_theme_support( 'post-thumbnails' );
         add_image_size( 'iguana-large', 500, 400, true ); // width, height, crop
 
+        add_theme_support( 'customize-selective-refresh-widgets' );
+
         add_theme_support(
             'post-formats',
             array(
