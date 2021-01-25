@@ -15,9 +15,8 @@
             <?php while ( have_posts() ) : the_post(); ?>
 
                 <article class="post">
-                    <?php the_title( '<h1 class="CHANGE-CLASS"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' ); ?>
+                    <?php the_title( '<h1 class="CHANGE-CLASS"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' ); ?> <!-- change class name to what you want it to be -->
                     <?php the_content(); ?>
-
                 </article>
 
             <?php endwhile ?>
