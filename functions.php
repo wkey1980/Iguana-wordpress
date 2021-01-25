@@ -101,7 +101,7 @@ require $theme_dir . '/inc/enqueue-styles.php';
 require $theme_dir . '/inc/enqueue-scripts.php';
 
 // Register Menus
-// require $theme_dir . '/inc/menus.php';
+require $theme_dir . '/inc/menus.php';
 
 // Register Widgets areas
 require $theme_dir . '/inc/widgets.php';
