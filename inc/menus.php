@@ -16,6 +16,6 @@ function iguana_register_menu() {
             'mobile' => __( 'Mobile Menu', 'uguana' ),
             'social' => __( 'Social Menu', 'uguana' ),
         )
-        );
+    );
 }
 add_action( 'init', 'iguana_register_menu' );

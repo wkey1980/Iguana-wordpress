@@ -7,7 +7,7 @@
 <?php
 define( 'iguana_theme_dir', get_template_directory() );
 
-if ( ! function_exists( 'iguana_setup' ) ) :
+if ( ! function_exists( 'iguana_setup' ) ): 
     function iguana_setup() {
         load_theme_textdomain( 'iguana', iguana_theme_dir . '/Languages' );
         add_theme_support( 'automatic-feed-links' );
@@ -51,12 +51,12 @@ if ( ! function_exists( 'iguana_setup' ) ) :
                     'custom-header',
                     apply_filters( 'iguana_custom_header_args',
                     array(
-                        'default-color' => 'ffffff', // Customize > Colors > Header Text Color
+                        'default-color' => 'ffffff',   // Customize > Colors > Header Text Color
                         'default-image' => '',
-                        'width' => 2000,
-                        'height' => 450,
-                        'flex-height' => false,
-                        'flex-width' => false,
+                        'width'         => 2000,
+                        'height'        => 450,
+                        'flex-height'   => false,
+                        'flex-width'    => false,
                         )
                     )
                 );
@@ -65,17 +65,17 @@ if ( ! function_exists( 'iguana_setup' ) ) :
                     apply_filters(
                         'iguana_custom_background_args',
                         array(
-                            'default-color'=> 'ffffff', // Customize > Colors > Background Color
-                            'default-image'=> '',
+                            'default-color' => 'ffffff',   // Customize > Colors > Background Color
+                            'default-image' => '',
                         )
                     )
                 );
                 add_theme_support(
                     'custom-logo',
                     array(
-                        'width' => 50,
-                        'height' => 50,
-                        'flex-width' => true,
+                        'width'       => 50,
+                        'height'      => 50,
+                        'flex-width'  => true,
                         'flex-height' => true,
                         'header-text' => array( 'title-tag', 'site-description' ),
                     )
