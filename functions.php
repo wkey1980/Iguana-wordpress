@@ -5,11 +5,12 @@
 ?>
 
 <?php
-define( 'iguana_theme_dir', get_template_directory() );
+define( 'IGUANA_THEME_DIR', get_template_directory() );
+define( 'IGUANA_THEME_URI', get_template_directory_uri() );
 
 if ( ! function_exists( 'iguana_setup' ) ): 
     function iguana_setup() {
-        load_theme_textdomain( 'iguana', iguana_theme_dir . '/Languages' );
+        load_theme_textdomain( 'iguana', IGUANA_THEME_DIR . '/Languages' );
         add_theme_support( 'automatic-feed-links' );
         add_theme_support( 'title-tag' );
 
@@ -94,17 +95,17 @@ add_action( 'after_setup_theme', 'iguana_setup' );
 // $theme_dir = get_template_directory();
 
 // Register Google Fonts
-require iguana_theme_dir . '/inc/google-fonts.php';
+require IGUANA_THEME_DIR . '/inc/google-fonts.php';
 
 // Enqueue Styles
-require iguana_theme_dir . '/inc/enqueue-styles.php';
+require IGUANA_THEME_DIR . '/inc/enqueue-styles.php';
 
 // Enqueue Scripts
-require iguana_theme_dir . '/inc/enqueue-scripts.php';
+require IGUANA_THEME_DIR . '/inc/enqueue-scripts.php';
 
 // Register Menus
-require iguana_theme_dir . '/inc/menus.php';
+require IGUANA_THEME_DIR . '/inc/menus.php';
 
 // Register Widgets areas
-require iguana_theme_dir . '/inc/widgets.php';
+require IGUANA_THEME_DIR . '/inc/widgets.php';
 
